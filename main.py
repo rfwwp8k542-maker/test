@@ -1,4 +1,6 @@
-from flask import Flask, jsonify, render_template
+from platform import java_ver
+java_ver = java_ver()
+from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
